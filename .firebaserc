@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "staging": "josh-yip-personal-website",
+    "default": "josh-yip-personal-website"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
