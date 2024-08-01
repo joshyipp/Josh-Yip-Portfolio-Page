@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2C3E50;
+    background-color: #ECF0F1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #34495E;
+    padding: 20px 0;
+    border-bottom: 1px solid #2C3E50;
+    color: #ECF0F1;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    font-size: 24px;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #1ABC9C;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1ABC9C;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+main h2 {
+    font-size: 28px;
+    border-bottom: 2px solid #2C3E50;
+    padding-bottom: 10px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: 30%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #ECF0F1;
+    border: 1px solid #2C3E50;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #34495E;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    color: #1ABC9C;
+}
+
+.project-item:hover {
+    background-color: #BDC3C7;
+}
+
+/* Power BI Embed */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495E;
+    padding: 10px 0;
+    border-top: 1px solid #2C3E50;
+    text-align: center;
+    color: #ECF0F1;
+}
