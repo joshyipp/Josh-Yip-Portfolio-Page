@@ -89,7 +89,7 @@ main h2 {
 }
 
 .project-item {
-    width: 30%;
+    width: 100%;
     margin: 10px 0;
     padding: 20px;
     background-color: #ECF0F1;
@@ -120,6 +120,12 @@ iframe {
     border: none;
 }
 
+/* Centering Styles for Resume */
+#resume iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Footer Styles */
 footer {
     background-color: #34495E;
@@ -127,4 +133,17 @@ footer {
     border-top: 1px solid #2C3E50;
     text-align: center;
     color: #ECF0F1;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .project-item {
+        width: 48%;
+    }
+}
+
+@media (min-width: 900px) {
+    .project-item {
+        width: 30%;
+    }
 }
