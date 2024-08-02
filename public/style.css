@@ -5,13 +5,18 @@ body {
     padding: 0;
     color: #2C3E50;
     background-color: #ECF0F1;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0;
 }
 
 /* Header Styles */
@@ -54,49 +59,59 @@ header nav ul li a:hover {
     color: #1ABC9C;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #1ABC9C;
-    color: #ECF0F1;
-    text-align: center;
-    padding: 60px 0;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
 /* Main Content Styles */
 main {
-    padding: 20px 0;
+    padding: 0;
+    height: calc(100% - 60px); /* Adjust based on the header height */
 }
 
 main h2 {
     font-size: 28px;
     border-bottom: 2px solid #2C3E50;
     padding-bottom: 10px;
+    margin: 0;
 }
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100%;
 }
 
 .project-item {
     width: 100%;
-    margin: 10px 0;
-    padding: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #ECF0F1;
-    border: 1px solid #2C3E50;
-    border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    padding: 10px;
+    background-color: #34495E;
+    color: #ECF0F1;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust based on the header height within project-item */
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: relative;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    border: none;
 }
 
 .project-item a {
@@ -113,19 +128,6 @@ main h2 {
     background-color: #BDC3C7;
 }
 
-/* Power BI Embed */
-iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-}
-
-/* Centering Styles for Resume */
-#resume iframe {
-    display: block;
-    margin: 0 auto;
-}
-
 /* Footer Styles */
 footer {
     background-color: #34495E;
@@ -133,17 +135,4 @@ footer {
     border-top: 1px solid #2C3E50;
     text-align: center;
     color: #ECF0F1;
-}
-
-/* Responsive Styles */
-@media (min-width: 600px) {
-    .project-item {
-        width: 48%;
-    }
-}
-
-@media (min-width: 900px) {
-    .project-item {
-        width: 30%;
-    }
 }
